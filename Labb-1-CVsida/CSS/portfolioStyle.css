@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.protfolio{
+    margin-top: 4.8rem;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, skyblue, lightgreen);
+}
+.protfolio .banner{
+    width: 100%;
+    height: 10rem;
+    justify-items: center;
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 400;
+}
+.protfolio .content{
+    justify-items: center;
+    text-align: center;
+    justify-content: top;
+    width: 100%;
+    height: 85vh;
+    padding: 7.5rem;
+}
+
+
+ul{
+    list-style: none;
+    align-items: center;
+}
+
+li a{
+    font-size: 5rem;
+    color: blueviolet;
+}
+
+
+
+.protfolio .modal{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.modalContent{
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 80vw;
+    height: 70vh;
+    background-color: #dad6d6d8;
+    border: 2px solid;
+    border-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0;
+    float: left;
+    align-items: center;
+    justify-content: top;
+    padding: 4rem;
+    flex-direction: column;
+    padding-left: 10rem;
+}
+
+.protfolio .modal .modalContent h2{
+    text-align: center;
+    font-size: 5rem;
+}
+.protfolio .modal .modalContent p{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    float: left;
+    text-align: left;
+    width: 60rem;
+    height: 25rem;
+    
+}
+.protfolio .modal .modalContent img{
+    float: left;
+    width: 30rem;
+    height: 25rem;
+    overflow: hidden;
+}
+
+
+.close,
+.close:link,
+.close:visited{
+    color: #444;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2.5rem;
+    display: inline-block;
+    line-height: 1;
+    transition: all 0.2s;    
+}
+.close:hover{
+    color: gray;
+}
+.modal:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modal:target .modalContent{
+    opacity: 1;
+    transform: translate(-50, -50%) scale(1);
+}
+
+.protfolio .bottomborder{
+    align-items: center;
+    position: relative;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 7.5rem;
+    background-color: #249eeb;
+}

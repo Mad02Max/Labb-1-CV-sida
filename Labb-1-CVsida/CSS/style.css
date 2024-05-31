@@ -1,0 +1,9 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Poppins', 'san-serif';
+}
+
