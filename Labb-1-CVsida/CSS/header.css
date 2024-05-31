@@ -33,9 +33,19 @@
 .header .navbar ul li a:hover{
     color: #ccc;
 }
+.header .fa-bars{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+    padding-right: 4rem;
+}
 @media (max-width: 760px) {
     html{
         font-size: 50%;
+    }
+    .header .fa-bars {
+        display: block;
     }
     .header .navbar{
         position: fixed;
